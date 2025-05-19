@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>🎮 Web Chơi Game Yêu Thích</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg: #f0f4f8;
+      --card-bg: #ffffff;
+      --card-hover: #e0f2fe;
+      --text: #1e40af;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: var(--bg);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #0f172a;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px var(--shadow);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-align: left;
+    }
+
+    .card:hover {
+      background-color: var(--card-hover);
+      transform: translateY(-5px);
+    }
+
+    .favicon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+    }
+
+    .link {
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--text);
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🌐 Danh Sách Web Chơi Game Hay</h1>
+  <div class="grid">
+    <a class="card-link" href="https://poki.com/" target="_blank">
+      <div class="card">
+        <img class="favicon" src="https://www.google.com/s2/favicons?domain=poki.com" alt="Poki">
+        <span class="link">Poki</span>
+      </div>
+    </a>
+    <a class="card-link" href="https://www.crazygames.com/" target="_blank">
+      <div class="card">
+        <img class="favicon" src="https://www.google.com/s2/favicons?domain=crazygames.com" alt="CrazyGames">
+        <span class="link">CrazyGames</span>
+      </div>
+    </a>
+    <a class="card-link" href="https://emupedia.net/beta/emuos/" target="_blank">
+      <div class="card">
+        <img class="favicon" src="https://www.google.com/s2/favicons?domain=emupedia.net" alt="EmuOS">
+        <span class="link">EmuOS</span>
+      </div>
+    </a>
+    <a class="card-link" href="https://gamevui.vn/" target="_blank">
+      <div class="card">
+        <img class="favicon" src="https://www.google.com/s2/favicons?domain=gamevui.vn" alt="GameVui">
+        <span class="link">GameVui</span>
+      </div>
+    </a>
+    <a class="card-link" href="https://www.pogo.com/" target="_blank">
+      <div class="card">
+        <img class="favicon" src="https://www.google.com/s2/favicons?domain=pogo.com" alt="Pogo">
+        <span class="link">Pogo</span>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
